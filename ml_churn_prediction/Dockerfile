@@ -1,11 +1,13 @@
 FROM python:3.8.12
 
-RUN pip install pipenv
+# RUN pip install pipenv
 
 WORKDIR /app
-COPY ["Pipfile", "Pipfile.lock", "./"]
+# COPY ["Pipfile", "Pipfile.lock", "./"]
+COPY ["requirements.txt", "./"]
 
-RUN pipenv install --system --deploy
+# RUN pipenv install --system --deploy
+RUN pip install --trusted-host pypi.org -r requirements.txt
 
 COPY ["predict.py", "model_C=0.1.bin", "./"]
 
