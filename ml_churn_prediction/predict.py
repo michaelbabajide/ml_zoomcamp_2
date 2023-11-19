@@ -29,27 +29,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=9696)
-
-
-# customer
-# {    
-#      "gender": "female",
-#      "seniorcitizen": 1,
-#      "partner": "no",
-#      "dependents": "yes",
-#      "phoneservice": "yes",
-#      "multiplelines": "yes",
-#      "internetservice": "fiber_optic",
-#      "onlinesecurity": "yes",
-#      "onlinebackup": "no",
-#      "deviceprotection": "yes",
-#      "techsupport": "yes",
-#      "streamingtv": "yes",
-#      "streamingmovies": "yes",
-#      "contract": "month-to-month",
-#      "paperlessbilling": "no",
-#      "paymentmethod": "electronic_check",
-#      "tenure": 6,
-#      "monthlycharges": 124.2,
-#      "totalcharges": 1003.5
-# }
