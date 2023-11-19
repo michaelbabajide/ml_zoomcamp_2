@@ -29,7 +29,7 @@ Then, send a POST request to `http://localhost:9696/predict` with customer data 
 curl -X POST -H "Content-Type: application/json" -d @customer.json http://localhost:9696/predict
 ```
 
-Where `customer.json` is a file containing customer data in the following format:
+Where `customer.json` is a file containing customer data in the following format: (you can make changes to the data to see how it affects the prediction)
 
 ```json
 {
